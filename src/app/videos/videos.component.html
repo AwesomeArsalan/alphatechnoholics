@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="container-fluid main-container">
+    <div class="row">
+        <div class="col-sm-3 text-center" *ngFor="let course of playlistData.items">
+          <div class="card mt-4">
+            <img class="card-img-top p-2" [src]='course.snippet.thumbnails.medium.url' alt="course.snippet.localized.title">
+            <div class="card-body">
+              <h5 class="card-title">{{course.snippet.localized.title}}</h5>
+              <p class="card-text">{{course.snippet.localized.description}}</p>
+            </div>
+            <div class="card-body">
+              <a routerLink = "videoTutorial/{{course.id}}" class="card-link btn btn-outline-primary my-2">Start Watching</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

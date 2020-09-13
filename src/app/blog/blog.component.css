@@ -1,0 +1,49 @@
+ul {
+  list-style-type: none;
+}
+
+/* .postLinkSection {
+  position: fixed;
+  overflow: hidden;
+}
+
+.blogSection {
+  margin-left: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .blogSection {
+    margin-left: 0;
+  }
+  .postLinkSection{
+    display: none;
+  }
+} */
+
+.postLink {
+  padding: 5px 0 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* mouse over link */
+a:hover {
+  color: #007bff;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+i {
+  font-size: 20px;
+  margin-left: 5px;
+  vertical-align: 2px;
+  font-weight: 500;
+  width: 20px;
+}

@@ -1,0 +1,40 @@
+<div class="wrapper">
+  <div class="row">
+    <div class="col-md-9 videoSection">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" id="videoIframe" [src]='link | safe' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-3 playListSection">
+      <div class="row mx-0 py-2 px-3 bg-dark">
+          <h2 style="color: #fff;">Course Content</h2>
+      </div>
+      <ul class="content-holder">
+        <li class="content-holder-item" *ngFor="let item of playLists.items; let i = index" (click)="playVideo(item.snippet.resourceId.videoId, item.snippet.playlistId)">
+            {{i+1}}. {{item.snippet.title}}
+            <div class="mx-3">
+              <i class='far fa-play-circle' style='font-size:15px; color:red'></i>Free YouTube Video
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col-md-9 playListSection" style="border: 1px solid blue">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Q&A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Files</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Announcements</a>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+</div>

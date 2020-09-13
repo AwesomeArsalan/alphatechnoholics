@@ -1,0 +1,28 @@
+.content-holder {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.content-holder a {
+  color: black;
+  text-decoration: none;
+}
+
+.content-holder li:hover {
+  background-color: rgb(239, 239, 240);
+}
+
+.content-holder-item {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.playListSection {
+  height: 615px;
+  overflow: scroll;
+  padding: 0;
+}
+.videoSection {
+  background-color: #000;
+  margin: auto;
+}

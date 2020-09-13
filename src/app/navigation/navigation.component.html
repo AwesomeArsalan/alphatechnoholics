@@ -1,0 +1,19 @@
+<nav id="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/homepage">
+    <img src="../../assets/image/ATLogo.png" width="40" height="35" alt="">
+    AlphaTechnoholics
+  </a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse"
+       [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav navbar-collapse justify-content-end" (click)="toggleNavbar()">
+      <li class="nav-item"><a [routerLinkActive]="['active']" routerLink="/homepage" class="nav-link">Home</a></li>
+      <li class="nav-item"><a [routerLinkActive]="['active']" routerLink="/videos" class="nav-link">Videos</a></li>
+      <li class="nav-item"><a [routerLinkActive]="['active']" routerLink="blog/testblog" class="nav-link">Blog</a></li>
+      <li class="nav-item"><a [routerLinkActive]="['active']" routerLink="/contact" class="nav-link">Contact</a></li>
+      </ul>
+  </div>
+</nav>

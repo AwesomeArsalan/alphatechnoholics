@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <div class="main-container container-fluid my-4">
+    <div class="row">
+      <div class="col-sm-2 postLinkSection">
+        <div class="bg-dark" style="width: 100%; cursor: pointer; height: 50px; padding-top: 7px;">
+          <h3 (click)="expand()" style="color: #fff;"><i class="fas" [class.fa-minus-square]="show == true" [class.fa-plus-square]="show == false" ></i>   Posts</h3>
+        </div>
+        <ul *ngIf="show" class="postLinkList">
+          <li class="postLink">
+            <a [routerLink]="'testblog'" [routerLinkActive]="['active']">Blog Post 1</a>
+          </li>
+          <li class="postLink">
+            <a [routerLink]="'testblog2'" [routerLinkActive]="['active']">Blog Post 2</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-10 blogSection">
+        <router-outlet></router-outlet>
+      </div>
+    <div>
+</div>
